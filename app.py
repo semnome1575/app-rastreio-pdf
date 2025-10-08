@@ -4,7 +4,7 @@ import re
 import zipfile
 import pandas as pd
 import qrcode
-from fpdf2 import FPDF # CORREÇÃO: Usamos fpdf2, que deve ser instalada
+from fpdf2 import FPDF
 from PIL import Image
 from flask import Flask, render_template, request, send_file, redirect, url_for, abort
 
@@ -196,4 +196,5 @@ if __name__ == '__main__':
         os.makedirs('templates')
     # Use o host '0.0.0.0' para garantir que o Flask funcione em qualquer ambiente
     app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
 
