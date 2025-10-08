@@ -14,7 +14,7 @@ ALLOWED_EXTENSIONS = {'csv', 'xls', 'xlsx'}
 MAX_CONTENT_LENGTH = 16 * 1024 * 1024 # Limite de 16MB
 
 # O Render lerá a variável de ambiente 'BASE_URL_RASTREAMENTO'.
-BASE_URL_RASTREAMENTO = os.environ.get('BASE_URL_RASTREAMENTO', 'http://rastreio.exemplo.com.br/documento/') 
+BASE_URL_RASTREAMENTO = os.environ.get('BASE_URL_RASTREAMENTO', 'http://rastreio.exemplo.com.br/documento/')
 
 app = Flask(__name__, template_folder='templates')
 app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
@@ -196,3 +196,4 @@ if __name__ == '__main__':
         os.makedirs('templates')
     # Use o host '0.0.0.0' para garantir que o Flask funcione em qualquer ambiente
     app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
