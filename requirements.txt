@@ -1,7 +1,6 @@
 Flask
 pandas
 qrcode
-fpdf2
 Pillow
 gunicorn
-openpyxl
+fpdf2
